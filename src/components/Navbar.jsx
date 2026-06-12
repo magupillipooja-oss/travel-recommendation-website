@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar({ searchQuery, setSearchQuery, onSearch, onReset }) {
+export default function Navbar({ searchQuery, setSearchQuery, onSearch, onClear }) {
   const handleKeyDown = (e) => {
     if (e.key === "Enter") onSearch();
   };
@@ -208,8 +208,8 @@ export default function Navbar({ searchQuery, setSearchQuery, onSearch, onReset 
           <button className="btn btn-search" onClick={onSearch} aria-label="Search">
             Search
           </button>
-          <button className="btn btn-reset" onClick={onReset} aria-label="Reset search">
-            Reset
+          <button className="btn btn-reset" onClick={onClear} aria-label="Clear search">
+            Clear
           </button>
         </div>
 

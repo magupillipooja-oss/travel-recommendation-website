@@ -55,7 +55,7 @@ export default function HomePage() {
     setSearched(true);
   };
 
-  const handleReset = () => {
+  const handleClear = () => {
     setSearchQuery("");
     setResults([]);
     setSearched(false);
@@ -324,7 +324,7 @@ export default function HomePage() {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         onSearch={handleSearch}
-        onReset={handleReset}
+        onClear={handleClear}
       />
 
       {/* Hero section */}
